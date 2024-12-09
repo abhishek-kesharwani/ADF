@@ -1,0 +1,9 @@
+{
+	"name": "airbnbADF",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "a19a7073-8b3e-420f-b012-63902d494f04",
+		"tenantId": "732f97b4-082b-4d64-8241-47bedb11a62e"
+	}
+}

@@ -1,0 +1,22 @@
+{
+	"name": "AzureDataLakeStorage1",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureBlobFS",
+		"typeProperties": {
+			"url": "https://airbnbadlsgen2.dfs.core.windows.net/",
+			"tenant": "732f97b4-082b-4d64-8241-47bedb11a62e",
+			"servicePrincipalId": "7dce2e20-4f1d-4955-8397-3cfd9a15b4a2",
+			"servicePrincipalCredentialType": "ServicePrincipalKey",
+			"servicePrincipalCredential": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "AzureKeyVault1",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "airbnb-client-secret-id"
+			}
+		}
+	}
+}
